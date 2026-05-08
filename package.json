@@ -6,8 +6,9 @@
     "test": "playwright test"
   },
   "dependencies": {
-    "passmark": "latest",
-    "dotenv": "latest"
+    "dotenv": "latest",
+    "openai": "^6.36.0",
+    "passmark": "^1.0.13"
   },
   "devDependencies": {
     "@playwright/test": "latest",

@@ -45,8 +45,9 @@ export type ModelConfig = {
 };
 
 export const DEFAULT_MODELS: Required<ModelConfig> = {
-  stepExecution: "google/gemini-3-flash",
-  userFlowLow: "google/gemini-3-flash",
+  // Dia akan mencoba membaca dari .env (AI_MODEL), jika tidak ada baru pakai default
+  stepExecution: process.env.AI_MODEL || "google/gemini-3-flash", 
+  userFlowLow: process.env.AI_MODEL || "google/gemini-3-flash",
   userFlowHigh: "google/gemini-3.1-pro-preview",
   assertionPrimary: "anthropic/claude-haiku-4.5",
   assertionSecondary: "google/gemini-3-flash",

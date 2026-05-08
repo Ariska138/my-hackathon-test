@@ -13,7 +13,8 @@ dotenv.config({ path: path.resolve(__dirname, '.env') });
  */
 configure({
   ai: {
-    gateway: "openrouter"
+    gateway: "openrouter",
+    
   }
 });
 
